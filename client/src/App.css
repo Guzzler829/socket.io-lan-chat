@@ -1,0 +1,105 @@
+.app {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    width: 98vw;
+    height: calc(100vh - 13px - 1em);
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 1px solid #777;
+    background-color: #333;
+}
+
+.chat-box {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 110px);
+    overflow-y: scroll; /*WHYYYYY DOESNT THIS WORK */
+
+}
+
+.input-container {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    background-color: #333;
+    border-top: 2px solid #777;
+}
+
+.input-container > textarea {
+    width: 100%;
+    background-color: #444;
+    color: #eee;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
+.input-container > button {
+    position: relative;
+    width: 70px;
+    height: 107px;
+    padding: 20px;
+    bottom: -10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: 50ms ease-in-out;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35), -1px 1px 2px rgba(0, 0, 0, 0.35), -1px -1px 2px rgba(0, 0, 0, 0.35), 1px -1px 2px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.can-send-true {
+    background-color: rgb(4, 185, 4);
+}
+
+.can-send-false {
+    background-color: rgb(39, 39, 39);
+}
+
+.sys-message {
+    text-align: center;
+    padding: 8px;
+    color: #bbb;
+}
+
+.sys-warning {
+    text-align: center;
+    padding: 8px;
+    color: #ff7777;
+}
+
+.status {
+    text-align: center;
+    padding: 4px;
+}
+
+.connection-true {
+    color: rgb(113, 255, 113);
+}
+.connection-false {
+    color: rgb(255, 110, 110);
+}
+
+
+.message-end {
+    height: 10px;
+}
+
+.username {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
